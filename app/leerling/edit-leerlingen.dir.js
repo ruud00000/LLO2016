@@ -1,12 +1,12 @@
-app.directive("editBuildings", function () {
+app.directive("editLeerlingen", function () {
   return {
     restrict: 'E',
     transclude: true,
     scope: {
-      buildings: '=',
+      leerlingen: '=',
       "update": '&onEdit',
       "remove": '&onDelete'
     },
-    templateUrl: 'building/edit-building.tpl.html'
+    templateUrl: 'leerling/edit-leerling.tpl.html'
   };
 });

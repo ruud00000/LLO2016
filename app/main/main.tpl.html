@@ -4,17 +4,17 @@
     This example shows the best practices for Angular applications working together with AngularFire & Firebase.
   </p>
   <div ng-if="!isLoggedIn()">
-    Currently you are not logged in.
-    Please click <a href="" ng-click="login()">here</a> to log in anonymously and access other functionality.
+    Je bent nu niet ingelogd.
+    Klik <a href="" ng-click="login()">hier</a> om anoniem in te loggen en toegang tot meer functies te krijgen.
   </div>
   <div ng-if="isLoggedIn()">
     <h4>Auth data:</h4>
     <div class="alert alert-success">
       {{authData}}
     </div>
-    <button type="button" class="btn btn-success" ng-click="logout()">Done. Log me out.</button>
+    <button type="button" class="btn btn-success" ng-click="logout()">Klaar. Log me uit.</button>
   </div>
   <div class="alert alert-danger" ng-if="errorDuringLoggingIn()">
-    Error: {{error}}
+    Fout: {{error}}
   </div>
 </div>

@@ -16,13 +16,13 @@ app.config(function ($routeProvider) {
       templateUrl: 'main/main.tpl.html',
       controller: 'MainCtrl as mainCtrl'
     })
-    .when('/buildings', {
-      templateUrl: 'building/building-view.tpl.html',
-      controller: 'BuildingCtrl as buildingCtrl'
+    .when('/leerlingen', {
+      templateUrl: 'leerling/leerling-view.tpl.html',
+      controller: 'LeerlingCtrl as leerlingCtrl'
     })
-    .when('/apartments', {
-      templateUrl: 'apartment/apartment.tpl.html',
-      controller: 'ApartmentCtrl as apartmentCtrl'
+    .when('/opmerkingen', {
+      templateUrl: 'opmerking/opmerking.tpl.html',
+      controller: 'OpmerkingCtrl as opmerkingCtrl'
     })
     .when('/factsvc', {
       templateUrl: 'fact-svc/factSvc.tpl.html',

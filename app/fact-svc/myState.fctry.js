@@ -1,11 +1,11 @@
 'use strict';
 
 app.factory('myFactoryWithState', function() {
-    return function(name) {
-        this.name = name;
+    return function(naam) {
+        this.naam = naam;
 
         this.hello = function() {
-            return "Hello " + this.name;
+            return "Hello " + this.naam;
         };
     };
 });
