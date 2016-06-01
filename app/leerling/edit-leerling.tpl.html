@@ -12,7 +12,7 @@
       </tr>
       <tr ng-repeat="(id, leerling) in leerlingen">
         <form class="form-inline">
-          <td><input type="number" class="form-control" ng-model="leerling.leerlingnummer"></td>
+          <td><input type="number" class="form-control" ng-model="leerling.leerlingNummer"></td>
           <td><input type="text" class="form-control" ng-model="leerling.leerlingNaam"></td>
           <td>
             <button type="button" class="btn btn-default" ng-click="update({id: id})">

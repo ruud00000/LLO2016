@@ -1,4 +1,4 @@
 var Leerling = function(nummer, naam) {
-  this.leerlingnummer = nummer;
+  this.leerlingNummer = nummer;
   this.leerlingNaam = naam;
 };
