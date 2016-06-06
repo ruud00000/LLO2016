@@ -1,18 +1,24 @@
 <div class="panel-heading">
-  <h3 class="panel-title">Existing leerlingen</h3>
+  <h3 class="panel-title">Leerlingenlijst</h3><br />
+  Zoeken: <input ng-model="mentorQuery" />
 </div>
+
 <div class="panel-body">
   <div class="table-responsive">
     <table class="table table-hover">
       <tr>
-        <th>Leerling Nr.</th>
+        <th>Nr.</th>
+        <th>Mentor</th>
+        <th>Klas</th>
         <th>Leerling Naam</th>
         <th></th>
         <th></th>
       </tr>
-      <tr ng-repeat="(id, leerling) in leerlingen">
+      <tr ng-repeat="(id, leerling) in leerlingen | filter: mentorQuery">
         <form class="form-inline">
-          <td><input type="number" class="form-control" ng-model="leerling.leerlingNummer"></td>
+          <td><span>{{leerling.leerlingNummer}}</span></td>
+          <td><span>{{leerling.leerlingMentor}}</span></td>
+          <td><span>{{leerling.leerlingKlas}}</span></td>
           <td><input type="text" class="form-control" ng-model="leerling.leerlingNaam"></td>
           <td>
             <button type="button" class="btn btn-default" ng-click="update({id: id})">
