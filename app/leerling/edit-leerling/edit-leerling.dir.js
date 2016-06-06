@@ -1,4 +1,6 @@
-app.directive("editLeerlingen", function () {
+angular
+    .module('edit-leerling')
+    .directive("editLeerling", function () {
   return {
     restrict: 'E',
     transclude: true,
@@ -7,6 +9,6 @@ app.directive("editLeerlingen", function () {
       "update": '&onEdit',
       "remove": '&onDelete'
     },
-    templateUrl: 'leerling/edit-leerling.tpl.html'
+    templateUrl: 'leerling/edit-leerling/edit-leerling.tpl.html'
   };
 });

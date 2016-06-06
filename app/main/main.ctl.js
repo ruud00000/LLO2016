@@ -1,6 +1,8 @@
 'use strict';
 
-app.controller('MainCtrl', ['$scope', 'authTokenFactory',
+angular.
+    module('main').
+    controller('MainCtrl', ['$scope', 'authTokenFactory',
   function ($scope, authTokenFactory) {
 
     $scope.isLoggedIn = function () {

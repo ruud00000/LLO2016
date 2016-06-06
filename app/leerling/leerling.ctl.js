@@ -1,6 +1,8 @@
 'use strict';
 
-app.controller('LeerlingCtrl', ['leerlingSvc',
+angular
+    .module('leerling')
+    .controller('LeerlingCtrl', ['leerlingSvc',
   function (leerlingSvc) {
 
     var vm = this;

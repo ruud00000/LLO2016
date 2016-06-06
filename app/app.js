@@ -1,8 +1,14 @@
 'use strict';
 
 var app = angular.module('firebaseApp', [
-  'ngRoute',
-  'firebase'
+    'ngRoute',
+    'firebase',
+    'main',
+    'menu',
+    'opmerking',
+    'leerling',
+    'create-leerling',
+    'edit-leerling'
 ]);
 
 // this is the Firebase URL we'll be talking to

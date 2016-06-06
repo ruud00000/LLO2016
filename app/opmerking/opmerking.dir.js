@@ -1,4 +1,6 @@
-app.directive('opmerking', ['FIREBASE_URI', '$firebaseObject', 'opmerkingSvc',
+angular
+    .module('opmerking')
+    .directive('opmerking', ['FIREBASE_URI', '$firebaseObject', 'opmerkingSvc',
   function (FIREBASE_URI, $firebaseObject, opmerkingSvc) {
 
     var linker = function (scope, element, attrs) {

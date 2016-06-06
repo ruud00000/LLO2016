@@ -1,6 +1,8 @@
 'use strict';
 
-app.service('leerlingSvc', ['FIREBASE_URI', '$firebaseArray',
+angular
+    .module('leerling')
+    .service('leerlingSvc', ['FIREBASE_URI', '$firebaseArray',
   function (FIREBASE_URI, $firebaseArray) {
 
     var leerlingenUri = FIREBASE_URI + 'leerlingen';

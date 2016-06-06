@@ -1,6 +1,8 @@
 'use strict';
 
-app.controller('OpmerkingCtrl', ['$scope', 'opmerkingSvc', 'leerlingSvc',
+angular
+    .module('opmerking')
+    .controller('OpmerkingCtrl', ['$scope', 'opmerkingSvc', 'leerlingSvc',
   function ($scope, opmerkingSvc, leerlingSvc) {
 
     var vm = this;

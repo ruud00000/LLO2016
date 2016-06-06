@@ -1,6 +1,8 @@
 'use strict';
 
-app.controller('MenuCtrl', ['authTokenFactory',
+angular.
+    module('menu').
+    controller('MenuCtrl', ['authTokenFactory',
   function (authTokenFactory) {
 
     this.isLoggedIn = function () {
