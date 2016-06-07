@@ -13,10 +13,16 @@ describe('LLO 2016', function() {
 
     it('should filter the leerlingen list as a user types into the search box', function() {
       // var editLeerling = $$('tr[ng-repeat*="(id, leerling) in leerlingen"]');
+
+      var EC = protractor.ExpectedConditions;
+      var elm = element(by.repeater('(id, leerling) in leerlingen'));
+
+      browser.wait(EC.presenceOf(elm), 5000);
+
+
       var editLeerling = element.all(by.repeater('(id, leerling) in leerlingen'));
       var query = element(by.model('mentorQuery'));
 
-      browser.sleep(5000);
       expect(editLeerling.count()).toBe(248);
 
       query.sendKeys('5H');
